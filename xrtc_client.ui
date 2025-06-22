@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>XRTCClientClass</class>
+ <widget class="QWidget" name="XRTCClientClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1252</width>
+    <height>1030</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>XRTCClient-Windows客户端V1.0</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#top {
+	background-color: rgb(200, 200, 200);
+}
+
+#top_left {
+	background-color: rgb(245, 245, 245);
+}
+
+#top_right {
+	background-color: rgb(100, 100, 100);
+}
+
+#bottom {
+	background-color: #007acc;
+}
+
+QPushButton {
+	background-color: #007acc;
+	color: rgb(255, 255, 255);
+}
+
+QPushButton:disabled {    
+    background-color: #D3D3D3;
+    color: #808080; 
+}</string>
+  </property>
+  <widget class="QWidget" name="top" native="true">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>20</y>
+     <width>1061</width>
+     <height>801</height>
+    </rect>
+   </property>
+   <widget class="QWidget" name="top_left" native="true">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>50</y>
+      <width>400</width>
+      <height>701</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>400</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <widget class="QLabel" name="label_host">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>7</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>XRTC服务:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_uid">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>35</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>7</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>UID:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_stream_name">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>110</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>7</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>流名称:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_cam">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>85</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>7</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>摄像头:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_mic">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>7</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>麦克风:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="edit_host">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>10</y>
+       <width>110</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>7</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>www.str2num.com:8281</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="edit_uid">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>35</y>
+       <width>110</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>7</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>211</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="edit_stream_name">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>60</y>
+       <width>110</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>7</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>xrtc_985</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cb_cam">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>85</y>
+       <width>110</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>7</pointsize>
+      </font>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cb_mic">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>110</y>
+       <width>110</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>7</pointsize>
+      </font>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_preview">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>170</y>
+       <width>110</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>7</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>开始本地预览</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_push">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>200</y>
+       <width>110</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>7</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>开始推流</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_pull">
+     <property name="geometry">
+      <rect>
+       <x>115</x>
+       <y>250</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>7</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>开始拉流</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_pull_stream_name">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>250</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>7</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>流1:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="edit_pull_stream_name">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>250</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>7</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>xrtc_985</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_device">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>140</y>
+       <width>110</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>7</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>启动音视频设备</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_pull_2">
+     <property name="geometry">
+      <rect>
+       <x>115</x>
+       <y>280</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>7</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>开始拉流</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_pull_stream_name_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>280</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>7</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>流2:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="edit_pull_stream_name_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>280</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>7</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>xrtc_web</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="top_right" native="true">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>30</y>
+      <width>321</width>
+      <height>651</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="bottom" native="true">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>890</y>
+     <width>921</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="label_tips2">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>0</y>
+      <width>135</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>7</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_tips1">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>0</y>
+      <width>150</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>7</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_tips3">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>0</y>
+      <width>135</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>7</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <zorder>bottom</zorder>
+  <zorder>top</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="xrtc_client.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,7 @@
+﻿   Qt/MSBuild: 3.4.0.1
+   Qt: 5.14.2
+  xrtc_client.cpp
+  main.cpp
+  qrc_xrtc_client.cpp
+  moc_xrtc_client.cpp
+  xrtcclient_win.vcxproj -> D:\qt-webrtc\xrtcclient_win\xrtcclient_1.0\bin\x64\Debug\xrtcclient_win.exe

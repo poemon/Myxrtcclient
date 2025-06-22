@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\qt-webrtc\\xrtcclient_win\\xrtcclient_1.0\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EE584D58-F377-47CB-A3BB-E17A68DA5C04}|xrtcclient_win.vcxproj|D:\\qt-webrtc\\xrtcclient_win\\xrtcclient_1.0\\xrtc_client.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EE584D58-F377-47CB-A3BB-E17A68DA5C04}|xrtcclient_win.vcxproj|solutionrelative:xrtc_client.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE584D58-F377-47CB-A3BB-E17A68DA5C04}|xrtcclient_win.vcxproj|D:\\qt-webrtc\\xrtcclient_win\\xrtcclient_1.0\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EE584D58-F377-47CB-A3BB-E17A68DA5C04}|xrtcclient_win.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "main.cpp",
+              "DocumentMoniker": "D:\\qt-webrtc\\xrtcclient_win\\xrtcclient_1.0\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "D:\\qt-webrtc\\xrtcclient_win\\xrtcclient_1.0\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-21T13:18:15.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "xrtc_client.cpp",
+              "DocumentMoniker": "D:\\qt-webrtc\\xrtcclient_win\\xrtcclient_1.0\\xrtc_client.cpp",
+              "RelativeDocumentMoniker": "xrtc_client.cpp",
+              "ToolTip": "D:\\qt-webrtc\\xrtcclient_win\\xrtcclient_1.0\\xrtc_client.cpp",
+              "RelativeToolTip": "xrtc_client.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-21T13:18:15.071Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
