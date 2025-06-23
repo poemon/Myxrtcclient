@@ -2,7 +2,7 @@
 #define XRTCCLIENT_BASE_XRTC_ENGINE_H_
 #include "xrtc/ixrtc_engine.h"	
 #include <modules/video_capture/video_capture.h>
-
+#include <modules/audio_device/include/audio_device.h>
 
 namespace xrtc {
 class XRTCEngine : public IXRTCEngine {
@@ -17,6 +17,9 @@ class XRTCEngine : public IXRTCEngine {
 
 private:
 	std::unique_ptr<webrtc::VideoCaptureModule::DeviceInfo> video_device_;
+	rtc::scoped_refptr<webrtc::AudioDeviceModule> audio_device_;
+		// rtc自己实现的指针
+
 };
 
 

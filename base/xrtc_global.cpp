@@ -5,13 +5,14 @@ namespace xrtc {
 XRTCGlobal* XRTCGlobal::Instance()
 {
 	static XRTCGlobal* const instance = new XRTCGlobal();
-	return instance;
+	return instance;	
 
 }
 XRTCGlobal::XRTCGlobal() :
 	api_thread_(rtc::Thread::Create()),
 	worker_thread_(rtc::Thread::Create()),
-	network_thread_(rtc::Thread::CreateWithSocketServer())
+	network_thread_(rtc::Thread::CreateWithSocketServer()),
+	task_queue_factory_(webrtc::CreateDefaultTaskQueueFactory())
 {
 	api_thread_->SetName("api_thread", nullptr);
 	api_thread_->Start();
