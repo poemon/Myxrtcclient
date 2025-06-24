@@ -1,0 +1,9 @@
+﻿#ifndef XRTCCLIENT_MEDIA_SOURCE_VCM_CAPTURE_H_
+#define XRTCCLIENT_MEDIA_SOURCE_VCM_CAPTURE_H_
+
+namespace xrtc {
+
+}
+
+
+#endif
